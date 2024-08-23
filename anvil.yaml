@@ -23,5 +23,8 @@ db_schema:
     - name: media_obj
       admin_ui: {width: 200, order: 1}
       type: media
+    - name: naam
+      admin_ui: {order: 0, width: 200}
+      type: string
     title: Table 1
 uplink_visible: true

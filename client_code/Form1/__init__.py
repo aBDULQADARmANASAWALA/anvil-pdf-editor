@@ -17,7 +17,7 @@ class Form1(Form1Template):
 
   def file_loader_1_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""
-    app_tables.table_1.add_row(naam=file.name)
     anvil.server.call("edit_pdf", file, file.name)
+    app_tables.table_1.add_row(naam=file.name)
     row = app_tables.table_1.get(naam=file.name)
     anvil.media.download(row['media_obj'])

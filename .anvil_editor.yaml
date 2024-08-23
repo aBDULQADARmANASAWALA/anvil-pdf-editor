@@ -4,6 +4,7 @@ unique_ids:
   modules: {}
   server_modules: {}
   assets:
-    theme.css: 3CF64OFV3CM2FN4IXIGWPLYHANWR2CWE
+    Picture1.png: '1724419393034882747525446.7047'
     standard-page.html: MAWBK7B2S24IPZFEMKK7WK6VFKZUOURZ
+    theme.css: 3CF64OFV3CM2FN4IXIGWPLYHANWR2CWE
   scripts: {}

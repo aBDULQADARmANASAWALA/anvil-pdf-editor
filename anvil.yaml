@@ -20,9 +20,6 @@ db_schema:
     client: full
     server: full
     columns:
-    - name: name
-      admin_ui: {width: 200, order: 0}
-      type: string
     - name: media_obj
       admin_ui: {width: 200, order: 1}
       type: media

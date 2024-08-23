@@ -16,5 +16,4 @@ class Form1(Form1Template):
 
   def file_loader_1_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""
-    url = file.get_url()
-    anvil.server.call("edit_pdf", url)
+    anvil.server.call("edit_pdf", file, file.name)

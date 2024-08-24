@@ -18,9 +18,9 @@ class Form1(Form1Template):
     """This method is called when a new file is loaded into this FileLoader"""
     app_tables.table_1.add_row(naam=file.name)
     anvil.server.call("edit_pdf", file, file.name)
+    # would like to create the below get() based on row id
     row = app_tables.table_1.get(naam=file.name)
     anvil.media.download(row['media_obj'])
-    # app_tables.table_1.add_row(media_object= media)
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""

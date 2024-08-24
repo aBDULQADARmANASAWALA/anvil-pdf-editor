@@ -7,7 +7,6 @@ import anvil.server
 import anvil.media
 import time
 
-
 class Form1(Form1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -22,3 +21,7 @@ class Form1(Form1Template):
     row = app_tables.table_1.get(naam=file.name)
     anvil.media.download(row['media_obj'])
     # app_tables.table_1.add_row(media_object= media)
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass

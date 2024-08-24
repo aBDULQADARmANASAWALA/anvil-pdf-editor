@@ -18,6 +18,11 @@ components:
     layout_properties: {grid_position: 'LJSOPH,WFUYWW', full_width_row: false}
     data_bindings: []
     event_bindings: {change: file_loader_1_change}
+  - name: button_1
+    properties: {text: Download, font_size: 24, icon: 'fa:download', italic: false, visible: false}
+    type: Button
+    layout_properties: {grid_position: 'YNRYXA,BOBTVU', full_width_row: true, row_background: 'theme:Primary Container'}
+    event_bindings: {click: button_1_click}
 - name: label_1
   properties: {role: headline, bold: false, align: center, spacing_above: small, icon: 'fa:file', underline: false, font: algerian, icon_align: left_edge, spacing_below: small, visible: true, italic: true, font_size: 45, text: Edit PDFS}
   type: Label
